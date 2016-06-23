@@ -61,7 +61,6 @@ if [ "$skip_download" = "false" ]; then
       cgswong/aws:aws ecr --region "${aws_region}" get-login)
   elif [ -n "${username}" ] && [ -n "${password}" ]; then
     docker login -u "${username}" -p "${password}" ${registry}
-
   fi
 
   docker_pull "$image_name"
