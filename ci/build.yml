@@ -5,10 +5,10 @@ image: docker:///concourse/static-golang
 
 inputs:
 - name: docker-image-resource
-  path: gopath/src/github.com/concourse/docker-image-resource
+  path: gopath/src/github.com/farahfa/docker-image-resource
 
 outputs:
 - name: built-resource
 
 run:
-  path: gopath/src/github.com/concourse/docker-image-resource/ci/scripts/build
+  path: gopath/src/github.com/farahfa/docker-image-resource/ci/scripts/build
